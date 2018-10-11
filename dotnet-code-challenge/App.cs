@@ -35,7 +35,7 @@ namespace dotnet_code_challenge
             }
 
             //order the list by name and print out
-            horsePrices = horsePrices.OrderBy(x => x.HorseName).ToList();
+            horsePrices = horsePrices.OrderBy(x => x.Price).ToList();
             foreach (var price in horsePrices)
             {
                 Console.WriteLine($"Horse Name: {price.HorseName} . Price: {price.Price}");
